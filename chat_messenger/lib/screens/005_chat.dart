@@ -138,21 +138,27 @@ class MessageStream extends StatelessWidget {
           // snapshot.data;
           List<Map> messageData = [];
           if (snapshot.hasData) {
-            // for (var data in snapshot.data!.docs) {}
+            for (var data in snapshot.data!.docs) {
+              String texter = data.data()['sender'];
+            }
           }
           final allmessages = snapshot.data;
 
           return Expanded(
-            child: ListView(
-              children: [
-                for (var messageData in messageData)
-                  MessageBubble(
-                    isMe: messageData["isMe"],
-                    username: messageData['username'],
-                    message: messageData['message'],
+            child: messageData.isEmpty
+                ? const Center(
+                    child: Text('no chat found'),
                   )
-              ],
-            ),
+                : ListView(
+                    children: [
+                      for (var messageData in messageData)
+                        MessageBubble(
+                          isMe: messageData["isMe"],
+                          username: messageData['username'],
+                          message: messageData['message'],
+                        )
+                    ],
+                  ),
           );
         }));
   }
