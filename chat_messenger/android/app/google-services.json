@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "99376658731",
+    "project_id": "chat-vaishnavi",
+    "storage_bucket": "chat-vaishnavi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99376658731:android:b474d2351bd2792c842d6e",
+        "android_client_info": {
+          "package_name": "com.example.chat_messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99376658731-q88kcf85oi6i7i5g6j4f2mdsv87gfpsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDSNwSPICJbkY3dVSsGttCcMlWg1ypBbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99376658731-q88kcf85oi6i7i5g6j4f2mdsv87gfpsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
